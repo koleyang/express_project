@@ -96,9 +96,13 @@ dotenv.config({ // 注册环境变量配置
   path: './config/config.env'
 });
 
+www.js中调用
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
 
-
-
+server.listen(port, () => {
+  console.log(`服务启动成功端口${process.env.PORT}`)
+});
 
 
 

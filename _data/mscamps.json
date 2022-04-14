@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "5d713995b721c3bb38c1f5d0",
+    "user": "5d7a514b5d2c12c7449be045",
+    "name": "米修前端0基础训练营",
+    "description": "高中以上学历,有一些计算机基础知识,课程将会从最基础开始讲解,穿插实战巩固知识.最终达到企业的要求, 上岗工作!",
+    "website": "https://www.thenewstep.cn",
+    "phone": "17686668866",
+    "email": "27732357@qq.com",
+    "address": "四川省成都市武侯区来福士T2办公区7层",
+    "careers": ["前端开发", "小程序开发", "跨平台开发"],
+    "online": false,
+    "averageCost": 38
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830b8",
+    "user": "5d7a514b5d2c12c7449be046",
+    "name": "米修Python0基础训练营",
+    "description": "本科以上学历,懂数据结构,理科优先,有一定的逻辑观念,有一定计算机功底,课程会从入门讲解,结合实战项目,最终达到企业的要求.",
+    "website": "https://www.thenewstep.cn",
+    "phone": "17686668866",
+    "email": "27732357@qq.com",
+    "address": "四川省成都市武侯区来福士T2办公区7层",
+    "careers": ["前端开发", "数据挖掘", "人工智能"],
+    "online": false,
+    "averageCost": 58
+  },
+  {
+    "_id": "5d725a037b292f5f8ceff787",
+    "user": "5c8a1d5b0190b214360dc031",
+    "name": "米修后端0基础训练营",
+    "description": "高中以上学历,有一些计算机基础知识,课程将会从最基础开始讲解,穿插实战巩固知识.最终达到企业的要求, 上岗工作!",
+    "website": "https://www.thenewstep.cn",
+    "phone": "17686668866",
+    "email": "27732357@qq.com",
+    "address": "四川省成都市武侯区来福士T2办公区7层",
+    "careers": ["前端开发", "后端开发", "数据分析"],
+    "online": true,
+    "averageCost": 68
+  },
+  {
+    "_id": "5d725a1b7b292f5f8ceff788",
+    "user": "5c8a1d5b0190b214360dc032",
+    "name": "米修Golang0基础训练营",
+    "description": "本科以上学历,懂数据结构,理科优先,有一定的逻辑观念,有一定计算机功底,课程会从入门讲解,结合实战项目,最终达到企业的要求.",
+    "website": "https://www.thenewstep.cn",
+    "phone": "17686668866",
+    "email": "27732357@qq.com",
+    "address": "四川省成都市武侯区来福士T2办公区7层",
+    "careers": ["后端开发", "前端开发", "数据分析", "人工智能"],
+    "online": true,
+    "averageCost": 98
+  }
+]
