@@ -35,7 +35,7 @@ var MscampSchema = new Schema({//定义框架
     careers: {
         type: [String],
         require: true, 
-        enum: ['前端开发', '后端开发', '全栈工程师']
+        enum: ['前端开发', '小程序开发', '跨平台开发', '数据挖掘', '人工智能', '数据分析', '后端开发']
     },
     online: {
         type: Boolean,

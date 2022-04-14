@@ -53,13 +53,13 @@ app.get('/api/v1/mscamps', async (req, res) => {
 app.get('/api/v1/mscamps/:id', async (req, res) => {
   try {
     // res.status(200).json({success: true, message: `获取${req.params.id}个米修在线数据`});
-    const mscamps = await Mscamp.findById(req.params.id); // 直接用表对象调用findById()根据id查询单个数据
-    console.log('get请求根据id使用findById()查出单个数据 ===========>', mscamps);
+    const mscamp = await Mscamp.findById(req.params.id); // 直接用表对象调用findById()根据id查询单个数据
+    console.log('get请求根据id使用findById()查出单个数据 ===========>', mscamp);
     // 查询单个数据，如果没有查询到，返回400处理
     if(!mscamp) {
       return res.status(400).json({success: false});
     }
-    res.status(200).json({success: true, data: mscamps});
+    res.status(200).json({success: true, data: mscamp});
     
   } catch (error) {
     res.status(400).json({success: false, error});
