@@ -105,4 +105,63 @@ server.listen(port, () => {
 });
 
 
+9、错误处理中间件
+step1、必须是4个参数的express才会认为它是错误处理中间件
+app.use((err, req, res, next) => {
+  res.status(500).json({ message: err.message })
+})
 
+Express 会自动为您处理同步错误，如上面的 routeHandler() 方法。
+但是 Express 不处理异步错误。如果出现异步错误，则需要调用 next()
+
+next（err）----就是，手动触发错误处理中间件的，抛出err错误对象，err对象就可以触发4个参数的错误处理中间件
+
+错误处理中间件
+（err,req,res,next）
+err.message:错误信息 （只能捕获同步代码）
+触发错误处理next（err）中间件
+app.use(err)
+捕获错误
+try{
+}
+catch(){
+}
+
+
+10、http-errors
+创建http请求的错误对象：
+第一个参数是状态码
+第二个参数是描述
+第三个参数是配置对象---一般是设置响应头
+
+https://www.infoq.cn/article/DKuFPQzNW2XHNlwIzHg1
+
+第一种形式：
+const error = createHttpError(400, "Invalid filter");
+
+const error = new Error("Invalid filter");
+const httpError = createHttpError(400, error);
+
+
+第二种形式: any：
+ /**
+         * This error is created by specifying a numeric HTTP status code.
+         * 
+         * 400 (Bad Request) - The client has done something wrong.
+         */
+  const error = new createHttpError.BadRequest(
+    `Invalid sort parameter, must be either: ${validSort.join(", ")}`
+);
+
+// return next(error);
+
+
+第三种形式：
+
+
+const httpError = createHttpError(500, error, {
+  headers: {
+      "X-Custom-Header": "Value",
+  }
+});
+// return next(httpError);

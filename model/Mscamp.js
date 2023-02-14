@@ -41,7 +41,11 @@ var MscampSchema = new Schema({//定义框架
         type: Boolean,
         default: true
     },
-    createAtt: {
+    averageCost: {
+        type: Number,
+        default: 0
+    },
+    createAt: {
         type: Date,
         default: Date.now
     }
